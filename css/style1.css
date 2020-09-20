@@ -1,0 +1,12 @@
+/** This class will hide all the body by default**/
+#accordion .acc-body{
+			display:none !important;
+		}
+/** This class will show the body if it has "active" parent class. "active" class will be added to panel div **/
+		
+.active .acc-body {
+		display:block ;
+				}
+		
+
+		</style>
