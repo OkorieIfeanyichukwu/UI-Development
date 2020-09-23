@@ -8,39 +8,124 @@
         <link rel="stylesheet" href="css/bootstrap.css"/>
         <link rel="stylesheet" href="css/style1.css"/>
         <link rel="stylesheet"  href="fontawesome/css/all.min.css">
-
+        <script type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
         <!--this index.html refused to save even when i used sublime until i started tracking it using git 
         bash-->
         <nav>
-            <ul>
-                <li><button>Your Work</button></li>
-                <li>|</li>
-                <li><a href="#" class="grid-icon" >
-                        <span class="layer">
-                            <span>m</span><span>m</span>
-                        </span>
-                    </a>
+            <ul id="left-nav">
+                <li id="nav-btn"><button>Your Work</button></li>
+                <li class="fade">|</li>
+                <li><div class="icon">
+                        <div class="grid">
+                            <span></span>
+                            <span></span>                        
+                            <span></span>                        
+                            <span></span>        
+                        </div>
+                    </div>
                 </li>
-                <li>community challenge</li>
-                <li>&#8250;</li>
-                <li>Landing Page</li>
+                <li id="com-c">community challenge</li>
+                <li  id="caret"" class="fade">&#8250;</li>
+                <li id="landing" class="fade">Landing Page</li>
             </ul>
-            <ul float="right">
-                <li></li>
-                <li></li>
-                <li><i class="fas fa-bell fa-2.5x"></i></li>
-                <li><i class="fas fa-question-circle fa-1.5x"></i></li>
-                <li><i class="fas fa-area-chart"></i></li>
+            <ul class="right-nav">
+                <li>
+                <select >
+                <span class="caret" aria-autocomplete="none"></span>
+
+                        <option  value="37%" class="hidden selected">37%</option>
+                        <option id="default" value="default">Default</option>
+                        <option value="25%">25%</option>
+                        <option value="50%">50%</option>
+                        <option value="75%">75%</option>
+                        <option value="100%">100%</option>
+                        <option value="150%">150%</option>
+                        <option value="200%">200%</option>
+                    </select>
+                </li>
+                <li id="double-arrow" class="fade"><span>&#8703;</span></li>
+                <li><i class="fas fa-question-circle fade"></i></li>
+                <li><i class="fas fa-bell fade"></i></li>
+                <li id="pie"><i class="fas fa-chart-pie fa-2x"></i></li>
             </ul>
         
 
         </nav>
-        <div class="jumbotron jumbotron-main">
-            <h2>testint</h2>
 
-        </div>
+            <div class="row" id="Main">
+                
+
+                <div class="col-md-7">
+                    <div class="jumbotron jumbotron-main">
+                        <nav class="navbar">
+                            
+                                    <ul class=" navbar-right">
+                                        <li><a href="#">Resume</a></li>
+                                        <li><a href="#">CV</a></li>
+                                        <li><a href="#">Cover Letter</a></li>
+                                        <li><a href="#">pricing</a></li>
+                                        <li><a href="#">Can't see</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Contact us</a></li>
+                                        <li><a href="#"><button>Sign In</button></a></li>
+                                        <li><a href="#"><button>Sign Up</button></a></li>
+                                    </ul>
+                        </nav>
+
+                        <section>
+                            <div class="row">
+                                
+                                    <div class="col-sm-7">
+                                        <h2>The resume builder you can trust to get you the right job</h2>
+                                        <h5>Make an impression with our resume templates.</h5>
+                                        <button class="btn btn-lag">Get started</button>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <img id="img" src="images/editPhoto_20200922_234420.jpg">    
+                                    </div>
+
+                            </div>
+                            
+                        </section>
+
+
+            
+                    </div>  
+                    <div class="jumb-butt">
+                        <h1>Three overlapping pix</h1>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="cont-left">
+                        <textarea placeholder="Make a Comment         @ &#1F588;"></textarea>
+                    </div>
+                    
+                </div>
+                <div class="col-md-1">
+                    <i class="fas fa-phone"></i>
+
+                </div>
+    
+            </div>
+        <footer id="foot">
+            <p>
+                <a href="#"><i class="fa fa-home"></i></a>
+                <a href="#"><i class="fas fa-caret-left"></i></a>
+                <span>1</s>
+                <h5>to</h5>
+                <h5>29</h5>
+                <a href="#"><i class="fa fa-caret-right"></i></a>
+            </p>
+
+        </footer>
+        
+
+        <script src="jquery-3.4.1.js"></script>
+        
 
     </body>
 </html>
