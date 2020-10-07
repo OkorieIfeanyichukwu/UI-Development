@@ -174,7 +174,7 @@ nav .right-nav{
     background:#f7f7f7;
 }
 .col-sm-3 {
-    position:absolute;
+    position:fixed;
     height:100%;
     background:#ffffff;
     border:1px solid rgba(0,0,0,0.2);
