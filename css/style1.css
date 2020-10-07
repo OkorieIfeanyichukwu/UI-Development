@@ -2,7 +2,7 @@
 	position:relative;
 	left:0;
 	right:0;
-	background:#707070;
+	background:#7070709a;
 	height:75%;
 	padding-top: 0;
 
@@ -10,35 +10,365 @@
 
 .jumb-butt{
 	position: relative;
-	background:#f7f7f7;
+	background:transparent;
 	left:0;
 	right:0;
 	height:25%;
+	width:100%;
 	margin-top:-30px;
 	border:1px solid rgba(0,0,0,0.2);
 	text-align:center;
 
 }
 .navigate{
-	background:blue;
 	position:relative;
-
-	
+	top:6px;
 }
+.navigate ul{
+	position:absolute;
+	right:30px;
+	display:inline;
+
+}
+
 .navigate ul li{
 	display:inline;
+	margin-right:10px;
 }
 
 
 .navigate ul li a{
-	font-size: x-small;
+	font-size:6px;
 	color:#fff;
 	opacity:0.6;
 }
-
-.navbar ul li a #btn{
+.navigate ul li a button{
+	width:55px;
+	height:28px;
+	font-size:10px;
 	color:#fff;
+}
+.navigate ul li a .btn-default{
 	background:transparent;
-	border: #ffffff 1px solid;
-	overflow:hidden;
+	border:solid 2px;
+
+}
+
+#inner{
+	position: relative;
+	top:20px;
+	margin:0;
+	height:320px;
+	overflow:hidden ;/*overflow:auto changes to scroll
+	 or hidden(or any other overflow property) on its own*/
+	
+}
+.col-sm-7 {
+	position: absolute;
+	background:transparent;
+	top:0;
+	width:60%;
+	height:50vw;
+	left:0;
+}
+.col-sm-7 h3{
+	font-weight: bold;
+	padding-bottom:5px;
+}
+.col-sm-7 h5{
+	color:#fff;
+	font-weight: 600;
+
+	opacity:0.7;
+	padding-bottom:5px;
+
+}
+.col-sm-7 button{
+	margin-bottom:50px;
+}
+.col-sm-7 button h6{
+	margin:5px 20px 5px 20px;
+	opacity:0.6;
+}
+
+
+.col-sm-5{
+	background:transparent;
+	position: absolute;
+	right:0;
+	top:0;
+	width:60%;
+	height:50vw;
+	padding-top:6vw;
+}
+.col-sm-5 img{
+	background:transparent;
+	position:absolute;
+	width:80%;
+	height:260px;
+	top:6px;
+	right:0;
+	
+	opacity:0.5;
+}
+
+.jumb-butt .cont-michale{
+	position:relative;
+	background:#f7f7f7 url('../images/bundle.png');
+	background-size:432px ;
+	/*this helps to reduce the size of the image to the background size
+	no matter how small the background is*/
+	margin:auto;
+	top:0;
+	width:432px;
+	height:110px;
+	}
+@media only screen and (min-width:750px){
+	.col-sm-5 img{
+		background:transparent;
+		position:absolute;
+		width:270px;
+		height:320px;
+		top:6px;
+		right:10%;
+		
+		opacity:0.5;
+	}
+	.col-sm-7 {
+		position: absolute;
+		background:transparent;
+		top:5vw;
+		width:60%;
+		height:90vh;
+	
+		left:3vw;
+	}
+	.col-sm-5{
+		background:transparent;
+		position: absolute;
+		right:0;
+		top:0;
+		width:60%;
+		height:90vh;
+		padding-top:6vw;
+	
+	
+	}
+	
+}
+
+
+
+/*styling for page 2*/
+#content-2{
+	position:relative;
+	width:100%;
+	height:100%;
+	padding-top: 150px;
+	background:transparent;
+
+}
+
+#ln-1{
+	position:relative;
+	text-align:center;
+	font-weight:700;
+}
+#ln-2{
+	text-align:center;
+	font-weight:700;
+	
+}
+#ln-3{
+	text-align:center;
+	font-weight:700;
+		
+}
+#ln-4{
+	position:relative;
+	text-align:center;
+	opacity:0.4;
+	font-weight:700;
+
+}
+#page-2{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	background:linear-gradient(to right,green 0%,green 50%,
+	#999 50%,#999 75%,rgba(0, 128, 0, 0.548) 75%,rgba(0, 128, 0, 0.548) 100%);
+	width:150px;
+	height:3px;
+	border-radius:2px;
+
+}		
+
+/*styling for page6*/
+#Rcol-page-6{
+	position:relative;
+	background:url('../images/Resume\ template.png');
+	background-size:645px;
+	margin:auto;
+	top:0;
+	width: 645px;
+	height:480px;
+}
+
+/*styling for page5*/
+#Lcol-page-5 {
+	background:#fff url('../images/mobile.png');
+	background-size:425px ;
+	margin:auto;
+	height:480px;
+	width:425px;
+} 
+
+#Rcol-page-5{
+	position:relative;
+	padding-Top:20px;
+	background: #f7f7f7;
+	height:480px;
+	width:440px;
+	border:1px solid;
+	overflow-y:scroll;
+}
+#Rcol-page-5 .btn{
+	margin-top:10px;
+
+	margin-left: 45px;
+height:60px;
+width:300px
+
+}
+#Rcol-page-5 .btn-default i{
+	color:red;
+}
+#Rcol-page-5 .btn-default a{
+color:#000;
+margin-left:10px;
+}
+#Rcol-page-5 .btn-primary a{
+color:#fff;
+margin-left:10px;
+
+}
+#Rcol-page-5 #form-page-5{
+	margin-left:90px;
+}
+#OR{
+	text-align:center;
+	margin-top:10px;
+	font-weight: bolder;
+}
+
+#Rcol-page-5 #form-page-5 input{
+	margin-bottom:20px;
+	height:80px;
+}
+#Rcol-page-5 #submit-button{
+	left:0;
+}
+
+/*page-8 styling*/
+
+#head-6{
+font-weight:900;
+opacity:0.9;
+}
+#Rcol-page-8{
+	position:relative;
+	border:1px solid;
+	background:#f7f7f7;
+	height:480px;
+}
+#Rcol-page-8 #form-page-8{
+	position:relative;
+	top:0;
+	margin-left:-16px;
+	padding:0 30px 0 100px;
+	width:645px;
+	height:380px;
+	overflow-y:scroll;
+	opacity:0.6;
+}
+hr{
+	margin:30px 0 0 -50px;
+	width:100%;
+	height:1px;
+	background:#999999;
+}
+#Rcol-page-8 #form-page-8 input{
+	border:none;
+	background:transparent;
+	height:25px;
+}
+
+
+.del-Add {
+	background:transparent;
+	position:absolute;
+	display:flex;
+	align-items:center;
+	height:50px;
+	bottom:50px;
+	left:0;
+	width:659px;
+	padding-right:100px;
+	padding-left:100px;
+}
+#delSchool{
+	background:transparent;
+	color:red;
+	font-size: smaller;
+	font-weight:630;
+	margin-right:253px;
+border:1px solid red
+}
+#addSchool{
+	background:green;
+	color:#fff;
+	font-size: smaller;
+	font-weight:630;
+
+
+}
+.back-Next{
+	background: #333333;
+	position:absolute;
+	display:flex;
+	align-items:center;
+	height:50px;
+	bottom:0;
+	left:0;
+	width:659px;
+	padding-right:100px;
+	padding-left:100px;
+	
+}
+#next-btn{
+background:green;
+color :white;
+font-size:smaller;
+width:100px;
+font-weight:630;
+
+}
+#back-btn{
+	background:transparent;
+	color:green;
+	font-weight:630;
+
+font-size:smaller;
+width:100px;
+
+
+}
+#hr-bN{
+	margin: 30px 60px;
+	background:linear-gradient(to right,
+	green 0%, green 50%,#fff 50%,#fff 100% );
+	height:5px;
+	width:350px;
+	border-radius:2px;
+	border: 2px solid;
 }

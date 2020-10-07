@@ -1,0 +1,377 @@
+body{
+    background-color:#f7f7f7;
+    margin:0;
+    padding:0;
+	width:90%;
+	height:auto;
+}
+
+nav{
+	position:fixed;
+	top:0;
+	background:#ffffff;
+	width:100%;
+	/*min-width:800px;
+	making my width 100% makes the width adjustable to every screen
+	width but can exceed parent element if the parent has some margin and padding to it 
+	but when the width is set to auto,the child element cannot exceed the parent element,
+	even if the parent has padding and margin,the child will adjust to fit inside parent ,putting min-width helps define where content will stop adjusting incase you are reducing browser width*/
+	height:50px;
+	z-index:999;
+	overflow: hidden;
+	border:1px solid #ccc;
+
+	
+
+}
+nav ul{
+	position:relative;
+	list-style: none;
+	display:block;
+	align-items:center;
+	
+
+}
+
+nav #left-nav{
+	padding-left:15px;
+}
+ul #nav-btn button{
+	background: #ffffff;
+	border-radius:20px ;
+	border:black solid 2px;
+	font-weight: 700;
+	opacity:0.9;
+	padding:4px 13px 4px 13px;
+	margin-top:-7px;
+}
+nav ul li{
+	position: relative;
+	padding-top: 15px;
+	margin-right:10px;
+	float:left;
+}
+.fade{
+	opacity:0.8;
+}
+.light{
+	opacity:0.4;
+}
+#left-nav #caret{
+	font-size:20px;
+	opacity:0.3;
+	margin-top: -5px;
+	margin-right:12px;
+}
+#left-nav #com-c{
+	font-weight:650;
+	opacity:0.8;
+	font-size:13px;
+
+}
+#left-nav #landing{
+	font-weight:650;
+	font-size:13px;
+	opacity:0.5;
+}
+.icon{
+	position:relative;
+	display: flex;
+	width:25px;
+	height:25px;
+	margin-right:-9px;
+	
+}
+
+.grid {
+	position:relative;
+	cursor:pointer;
+	top:4px;
+	width:15px;
+	height:15px;
+}
+.grid span{
+	position:absolute;
+	width:6px;
+	height:6px;
+	background:white;
+	border: 0.5px solid black;
+	opacity:0.6;
+
+}
+.grid span:nth-child(2){
+	top:8px;
+}
+.grid span:nth-child(3){
+	left:8px;
+}
+.grid span:nth-child(4){
+	top:8px;
+	left:8px;
+}
+/*styling right side of the top navbar,with display as inline,width,height margin has no effect*/
+
+nav .right-nav{
+	position: absolute;
+	overflow:hidden;
+	right:0;
+	top:0px;
+	background:#fffff5;
+	cursor:pointer;
+
+}
+.right-nav li{
+	position:relative;
+	top:10px;
+	padding:4px 5px 5px 0px;
+}
+.right-nav #pie{
+	color:rgb(132, 247, 237);
+
+	position:relative;
+	top:6px;
+	padding-bottom:8px;
+	
+}
+.fa-chart-pie{
+	padding-bottom:2px;
+	background:blue;
+	border-radius:20px;
+	opacity:0.5;
+}
+.right-nav #double-arrow{
+	font-size: 30px;
+	margin-top:-15px;
+	transform: rotate(-45deg);
+	cursor: pointer;
+}
+
+#double-arrow span{
+	padding-bottom:20px;
+}
+
+/*styling the body*/
+
+
+.content{
+    padding-top:0;
+	position:relative;
+	background-image: url('../images/Onboarding\ 1.png');
+	margin-top:80px;
+	margin-bottom:0;
+	margin-right:0;
+	margin-left:0;
+    height:60%;
+    width:auto;
+	
+}
+
+.col-sm-8{
+	left:1.5vw;
+	width:92%;
+	height:100%;
+	position: absolute;
+    background:#f7f7f7;
+}
+.col-sm-3 {
+    position:absolute;
+    height:100%;
+    background:#ffffff;
+    border:1px solid rgba(0,0,0,0.2);
+	right:50px;    
+	display:none;
+}
+
+
+.col-sm-1{
+    position:absolute;
+    height:100%;
+    width:50px;
+    right:0;
+    margin:0;
+    background:#fff;
+	border:1px solid rgba(0,0,0,0.2);
+
+}
+
+footer{
+	background:#f7f7f7;
+	margin:0;
+	padding-top:80px;
+	position: relative;
+	width:auto;
+	height:150px;
+	
+	
+}
+#foot p{
+	text-align:center;
+}
+
+#foot p span{
+	margin:0 5px 0 5px;
+	opacity:0.4;
+}
+#foot p a{
+	color:grey;
+	margin:0 5px 0 5px;
+	opacity:0.5;
+	
+}
+#foot p a :hover{
+	color:#000;
+	
+}
+
+/*styling comment section*/
+.cont-left{
+    margin-top:90px;
+    background:#ffffff;
+    height:450px;
+}
+
+
+.cont-left p{
+	text-align:center;
+}
+form textarea{
+	color:green;
+}
+
+form input{
+background:transparent;
+border:none;
+font-weight:900;
+opacity:0.7;
+}
+form input:hover{
+	background:transparent;
+	border:none;
+	font-weight:x-large;
+	opacity:1;
+	}
+
+
+.comments{
+	margin:70px 20px 0 20px;
+}
+.comments p{
+	text-align:center;
+	padding-top:2px;
+}
+
+.comments p i{
+	opacity:0.3;
+}
+.comments h4{
+	font-weight:900;
+}
+.comments h6{
+	font-weight:700;
+	opacity:0.8;
+}
+
+#panel-collapse{
+	position:relative;
+	background:#ccc;
+	margin-top:60px;
+	margin-left:-8px;
+	padding: 6px 8px;
+	width:30px;
+	height:30px;
+	border-radius:3px;
+}
+@media only screen and (max-width:767px){
+	
+}
+@media only screen and (min-width:750px){
+	.content{
+		padding-top:0;
+		position:relative;
+		background-image: url('../images/Onboarding\ 1.png');
+		margin-top:80px;
+		margin-bottom:0;
+		margin-right:4vw;
+		margin-left:4vw;
+		height:480px;
+		width:auto;
+	
+
+	}
+	footer{
+		background:#f7f7f7;
+		margin:0;
+		padding-top:20px;
+		position: relative;
+		width:auto;
+		height:50px;
+		
+		
+	}
+}
+@media only screen and (min-width:1000px){
+	.content{
+		padding-top:0;
+		position:relative;
+		background-image: url('../images/Onboarding\ 1.png');
+		margin-top:80px;
+		margin-bottom:0;
+		margin-right:auto;
+		margin-left:auto;
+		height:480px;
+		width:880px;
+	
+
+	}
+}
+/*Common left-side column dropdown-select styling c*/
+
+#Lcol-page-dd{
+	padding-top:20px;
+	padding-bottom: 100px;
+	color:#fff;
+	margin:0;
+	left:0;
+	height:480px;
+}
+
+#Lcol-page-dd p{
+
+	color:#000;
+}
+#Lcol-page-dd img{
+	margin-right:8px;
+
+width:40px;
+height:40px;
+}
+#Lcol-page-dd .dropdown button{
+	position:relative;
+	width:190px;
+	margin-bottom: 1px;
+	opacity:0.7;
+	text-align:left;
+	font-size: smaller;
+	height:40px;
+}
+#Lcol-page-dd .dropdown button .fas{
+	float:left;
+	margin-right:12px;
+}
+#Lcol-page-dd .dropdown button .caret{
+	float:right;
+	margin-top:10px;
+}
+#Lcol-page-dd .dropdown ul {
+	width:190px;
+	text-align:center;
+}
+#Lcol-page-dd .dropdown ul li a{
+	font-weight:700;
+
+}
+#Lcol-page-dd .dropdown ul li a:hover{
+	color:green;
+	font-weight:900;
+
+}
